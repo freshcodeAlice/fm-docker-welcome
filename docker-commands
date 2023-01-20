@@ -5,3 +5,11 @@ docker run -it
 -e POSTGRES_PASSWORD=testtest 
 -e POSTGRES_DB=docker_db 
 --name sql_db postgres:alpine
+
+/////
+
+
+docker run -dit 
+-p 3000:3000 
+-v "$(pwd)":/app:ro 
+--name my_server server_image
