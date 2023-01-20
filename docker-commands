@@ -1,0 +1,7 @@
+docker run -it 
+-p 6000:5432 
+-v /home/freshcodealice/backups:/var/lib/postgresql/data 
+-e POSTGRES_USER=test 
+-e POSTGRES_PASSWORD=testtest 
+-e POSTGRES_DB=docker_db 
+--name sql_db postgres:alpine
